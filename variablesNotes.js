@@ -10,9 +10,24 @@
 
 // there are techicaly 3 kinds of variables in javascript
 
-let first = 1;
-const second = 2;
-var third = 3;
+// let first = 1;
+// const second = 2;
+// var third = 3;
+
+// console.log(first);
+// console.log(second);
+// console.log(third);
+
+// first = 1 + 1;
+// console.log(first);
+
+// first = 7;
+// second = 8;
+// third = 9;
+
+// console.log(first);
+// console.log(second);
+// console.log(third);
 
 // when having two things that are the same like "first = 1" and "first = 1+1" whatever comes second, overrides the first command
 // telling the computer to use the second code over the first code.
@@ -21,3 +36,29 @@ var third = 3;
 
 // OPERATORS: +, -, *, /, ** (exponent), % (modulo/mod)
 // modulo is the remainder of long form of division so 6 % 3 = 0 (3 goes into 6 with a remainder of 0) 
+
+// console.log("Hello, world!");
+
+// let fish;
+// fish = 3;
+
+// let cats = 7;
+// console.log(fish)
+// console.log(cats)
+// console.log(cats + fish)
+
+// console.log(3 + 5);
+// console.log(8 / 3);
+// console.log (35 + 5 / 4);
+
+let a = 10
+console.log(a)
+a = 100
+console.log(a)
+let b = 7 * a
+console.log(b)
+
+const max = 57
+const actual = max - 13
+const percentage = actual / max
+console.log(percentage)
