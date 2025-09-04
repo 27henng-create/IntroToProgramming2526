@@ -58,14 +58,31 @@
 // console.log(8 / 3);
 // console.log (35 + 5 / 4);
 
-let a = 10
-console.log(a)
-a = 100
-console.log(a)
-let b = 7 * a
-console.log(b)
+// let a = 10
+// console.log(a)
+// a = 100
+// console.log(a)
+// let b = 7 * a
+// console.log(b)
 
-const max = 57
-const actual = max - 13
-const percentage = actual / max
-console.log(percentage)
+// const max = 57
+// const actual = max - 13
+// const percentage = actual / max
+// console.log(percentage)
+
+
+let num1 = 1
+
+// ways to change a variable
+num1 = 1 + num1; // increase the value of num1 by 1
+num1++; // increase the value of num1 by 1
+num1 += 2; // increase the value of num1 by 2
+num1 *= 2; // mutiply num1 by 2
+num1 -= 3; // subtract 3 from num1
+num1 /= 4; // divide bum1 by 4
+
+
+
+// thisIsCamelCase
+// this_is_snake_case
+// number is already programed into javascript.
