@@ -121,4 +121,42 @@ console.log(text4) //same thing as before, you can add a string inbetween any of
 // index and ends befeore the secon index
 console.log(text.slice(3,8));
 
-// if you
+// if you leave out the second value you will get thr rest of the string.
+// you can also use negative indexing
+
+console.log(text.slice(-5))
+
+// [] is a notation that allows you to do something simillar to .at().
+// but, it can be somehwat unpredicatble in javaScript.
+// can't use negatives or it will throw an error at you
+
+console.log(text[5]);
+
+// .substring(); similar to slice, but start and end values that are less than 0 are tretaed as 0.
+
+// .substr(); where the second number was how long you wanted the string to be;
+// this is deprecated, so DON'T use it.
+
+
+// .toUpperCase()
+// in some codes, using this makes the whole thing upper case forever
+console.log(text.toUpperCase());
+
+// .toLowerCase()
+console.log(text.toLowerCase());
+
+text = "                     Stevie T. Badin                     "
+
+console.log(text);
+
+// .trim() to remove whitespace from both ends of a string
+console.log(text.trim())
+
+// you can aso .trimStart() and .trimEnd()
+
+
+// .padStart() allows you to add "padding" to the start of a string to get to given length
+// .padEnd() does the same but for the end of the string
+let newText = "Rams"
+let padded = newText.padStart(5, "*")
+console.log(padded);
