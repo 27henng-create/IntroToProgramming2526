@@ -160,3 +160,22 @@ console.log(text.trim())
 let newText = "Rams"
 let padded = newText.padStart(5, "*")
 console.log(padded);
+
+// .repeat() a method that returns a string with a number of copies. This returns a
+//new string, it does not modify the original.
+
+let newNewtext= newText.repeat(4);
+console.log(newNewtext);
+
+// .replace(); replaces a specified value with another value. Only applied to the 
+// first instance of the matching key phrase
+let newNewtext = newText.replace("Rams", "Badin");
+console.log(newNewtext);
+
+// .replaceAll() replaces ALL instances of the matching key phrase, BUT doesn't
+// work with 100% of broswers.
+let newNewtext = newText.replaceAll("Rams", "Badin");
+console.log(newNewtext);
+
+// You also need to be careful when implementing something like a replaceAll:
+// When doing something to EVERYTHING be careful to think about special cases
