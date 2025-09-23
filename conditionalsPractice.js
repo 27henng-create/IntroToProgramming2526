@@ -93,8 +93,83 @@
 // Functionally, javaScript's AND function finds the first "falsy" value, then returns it
 // if NO falsy value are found, it retuns the last value.
 
-console.log(10 && 5 && 0 && 1);
-console.log(10 && 5 && 1 );
-console.log(10 && 5 && 15);
+// console.log(10 && 5 && 0 && 1);
+// console.log(10 && 5 && 1 );
+// console.log(10 && 5 && 15);
 
-// && has higher "precedence" then || (pemdas)
+// // && has higher "precedence" then || (pemdas)
+// console.log(true && false || true && false);
+
+// // (some people use || or && as a replacement for "if") DO NOT USE!!!!!!!!!!!!!!!!!
+
+// // ! - NOT
+// //      First it converts the value to a Boolean,
+// // then it flips the "truthyness" of the value.
+
+// console.log(!true) // = false
+// console.log(!0) // = true
+
+// // because of this conversion element, you can use "!!" to convert something,
+// // to a boolean value
+
+// console.log(!!0) // = false
+
+// NOT has highest precendence of all logical operators.
+
+// ? is a "conditional operator" (ternary)
+// Example: 
+//      traditional approach - let a person sign up for a 
+// social media site if they are over the age of 13.
+
+// let registrationAllowed;
+// let age = prompt("How old are you (in years)?", "");
+
+//TRADITIONAL
+// if (age > 13){
+//     registrationAllowed = true;
+// } else {
+//     registrationAllowed = false;
+// }
+
+// console.log(registrationAllowed);
+
+// USING CONDITONAL OPERATOR (?)
+// let age = prompt("How old are you (in years)?", "");
+// let registrationAllowed = (age > 13) ? true : false;
+// console.log(registrationAllowed);
+
+// You can use multiple ?s. Example:
+// let age = prompt("Age?", "");
+
+// let message = (age < 3) ? "You're just a baby!" :
+//     (age < 10) ? "Hi there, kiddo" :
+//     (age < 60) ? "Hello" :
+//     (age < 100) ? "Howdy, Grandpa" :
+//     "Dange, you're OLD."
+
+// console.log(message);
+
+// SWITCHES
+//      A different way to do an if/else if/ else if ... chain
+// switches test for "Strict Equallity". "===" is how you test for strict equality.
+// Strict equality is when the values are the same AND the data types match.
+
+console.log(3 == "3"); // = true
+console.log(3 === "3"); // = false
+
+// example switch:
+let a = 2 + 2
+
+switch (a) {
+    case 3:
+        alert("Too Small");
+        break;
+    case 4:
+        alert("Exactly right!");
+        break;
+    case 5:
+        alert("Too Big");
+        break;
+    default:
+        alert("What are you even doing")
+}       // the break moves the code to the end of the curly bracet
