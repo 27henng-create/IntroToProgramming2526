@@ -125,11 +125,11 @@
 // let age = prompt("How old are you (in years)?", "");
 
 //TRADITIONAL
-// if (age > 13){
-//     registrationAllowed = true;
-// } else {
-//     registrationAllowed = false;
-// }
+if (age > 13){
+    registrationAllowed = true;
+} else {
+    registrationAllowed = false;
+}
 
 // console.log(registrationAllowed);
 
@@ -145,7 +145,7 @@
 //     (age < 10) ? "Hi there, kiddo" :
 //     (age < 60) ? "Hello" :
 //     (age < 100) ? "Howdy, Grandpa" :
-//     "Dange, you're OLD."
+//     "Dang, you're OLD."
 
 // console.log(message);
 
@@ -154,22 +154,55 @@
 // switches test for "Strict Equallity". "===" is how you test for strict equality.
 // Strict equality is when the values are the same AND the data types match.
 
-console.log(3 == "3"); // = true
-console.log(3 === "3"); // = false
+// console.log(3 == "3"); // = true
+// console.log(3 === "3"); // = false
 
-// example switch:
-let a = 2 + 2
+// // example switch:
+// let a = 2 + 2
 
-switch (a) {
-    case 3:
-        alert("Too Small");
-        break;
-    case 4:
-        alert("Exactly right!");
-        break;
-    case 5:
-        alert("Too Big");
-        break;
-    default:
-        alert("What are you even doing")
-}       // the break moves the code to the end of the curly bracet
+// switch (a) {
+//     case 3:
+//         alert("Too Small");
+//         break;
+//     case 4:
+//         alert("Exactly right!");
+//         break;
+//     case 5:
+//         alert("Too Big");
+//         break;
+//     default:
+//         alert("What are you even doing")
+// }       // the break moves the code to the end of the curly bracet
+
+// 1.  what will this do: alert( null || 2 || undefined );
+        // bring up a message saying "2"
+
+// 2.  what will this do: alert(alert(1) || 2 || alert(3) );
+        // it will bring up 3 different prompts saying the numbers "1", "2", and "3"
+
+// 3.  what will this do: alert( 1 && null && 2 );
+        // this will bring up a prompt saying "false"
+
+// 4.  what will this do: alert( null || 2 && 3 || 4 );
+        // this will bring up a prompt saying "4"
+
+// 5.  what will this do:  console.log(console.log(1) && console.log(2));
+        // this will "1" and "2" in the console in the page
+
+// 6.  Write an if condition to check that age is between 14 and 90 inclusively.  (“Inclusively” means that age can reach the edges 14 or 90.)
+let word = +prompt("How old are you?", "")
+let age = 22;
+if (age > 13 || age < 91){
+    console.log("Age Accepted");
+} else {
+    console.log("Age Denied");
+}
+
+// 7.  Write an if condition to check that age is NOT between 14 and 90 inclusively.
+        // 
+
+// Create two variants: the first one using NOT !, the second one – without it.
+// 8.  Which of these alerts are going to execute?  What will the results of the expressions be inside if(...)?:
+// if (-1 || 0) alert( 'first' ); 
+// if (-1 && 0) alert( 'second' ); 
+// if (null || -1 && 1) alert( 'third' );
