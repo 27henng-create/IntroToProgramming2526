@@ -174,35 +174,31 @@ if (age > 13){
 //         alert("What are you even doing")
 // }       // the break moves the code to the end of the curly bracet
 
-// 1.  what will this do: alert( null || 2 || undefined );
-        // bring up a message saying "2"
-
-// 2.  what will this do: alert(alert(1) || 2 || alert(3) );
-        // it will bring up 3 different prompts saying the numbers "1", "2", and "3"
-
-// 3.  what will this do: alert( 1 && null && 2 );
-        // this will bring up a prompt saying "false"
-
-// 4.  what will this do: alert( null || 2 && 3 || 4 );
-        // this will bring up a prompt saying "4"
-
-// 5.  what will this do:  console.log(console.log(1) && console.log(2));
-        // this will "1" and "2" in the console in the page
-
+// 1.  what will this do: alert( null || 2 || undefined ); // 2
+// 2.  what will this do: alert(alert(1) || 2 || alert(3) ); // 1 then 2
+// 3.  what will this do: alert( 1 && null && 2 ); // null because && looks for the first falsy value
+// 4.  what will this do: alert( null || 2 && 3 || 4 ); 3
+// 5.  what will this do:  console.log(console.log(1) && console.log(2)); // 1 (prints 1, returns undefined, then stops, because and sees a falsy)
 // 6.  Write an if condition to check that age is between 14 and 90 inclusively.  (“Inclusively” means that age can reach the edges 14 or 90.)
-let word = +prompt("How old are you?", "")
-let age = 22;
-if (age > 13 || age < 91){
-    console.log("Age Accepted");
-} else {
-    console.log("Age Denied");
+let age = 54;
+if( age >= 14 && age <= 90){
+        console.log(age)
 }
-
 // 7.  Write an if condition to check that age is NOT between 14 and 90 inclusively.
-        // 
-
 // Create two variants: the first one using NOT !, the second one – without it.
+// Three versions
+// if(! age >= 14 && age <= 90){
+//         console.log('version 1');
+// }
+
+// if(! age >= 14 || !(age <= 90)){
+//         console.log('version 2');
+// }
+
+// if(age < 14 || age > 90){
+//         console.log('version 3')
+// }
 // 8.  Which of these alerts are going to execute?  What will the results of the expressions be inside if(...)?:
-// if (-1 || 0) alert( 'first' ); 
-// if (-1 && 0) alert( 'second' ); 
-// if (null || -1 && 1) alert( 'third' );
+// if (-1 || 0) alert( 'first' );       // will say first
+// if (-1 && 0) alert( 'second' );      // it wont say second
+// if (null || -1 && 1) alert( 'third' );       // it will say third
