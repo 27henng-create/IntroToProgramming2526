@@ -88,25 +88,126 @@
 // };
 
 // you can also use arrow functions to create "anonymous" functions
-let age = prompt("what is your age?")
+// let age = prompt("what is your age?")
 
-let welcome = (age < 18) ?
-    () => alert("sup") :
-    () => alert("Hello");
+// let welcome = (age < 18) ?
+//     () => alert("sup") :
+//     () => alert("Hello");
 
-welcome();
+// welcome();
 
 // Loop : repeats a chunk of code while some conditions are true
 
-// whie loop: make a fibonacci generator
-let i = 1; // steps to do
-let a = 0;
-let b = 1;
+// // whie loop: make a fibonacci generator
+// let i = 0; // steps to do
+// let a = 0;
+// let b = 1;
+// let c;
+// console.log(a);
+// console.log(b);
+// // 10th step of the fibonacci seq
+// while(i < 8){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     i = i + 1;      // i +=1 is equal to i = i + 1 (i++ is also vaible)
+//     console.log(c);
+// }
 
-// 10th step of the fibonacci seq
-while(i < 10){
-    let c = a + b;
-    a = b;
-    b = c;
-    i = i + 1;      // i +=1 is equal to i = i + 1 (i++ is also vaible)
-}
+// Make a fibonacci sequence generator up to a certain value
+// let a = 0;
+// let b = 1;
+// let c = 0;
+// console.log(a);
+// console.log(b);
+// // all fib seq smaller than 150
+// while(a + b < 150){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     console.log(c);
+// }
+
+// using "if" to control the console.log allows you to stop the last
+// result from printing, but it still runs the code for one extra loop.
+// Changing the loop condition to "a + b < 150", should stop the loop from
+// running at all when we don't want it to.
+
+// another form of while is the do...while loop.
+
+// let i = 5;
+// do {
+//     console.log(i);
+//     i += 1;
+// } while (i < 3);
+// a do while loop will always run at least once.
+
+// two examples of password verification using loops:
+
+// traditional loop, password should be "Badin"
+
+// let password = prompt("Please enter your password");
+
+// while(password != "Badin"){
+//     password = prompt("Please enter your password");
+// }
+// console.log("Access Granted");
+
+// do...while version:
+// let password;
+// do{
+//     password = prompt("Please enter your password")
+// } while (password != "Badin")
+
+// console.log("Access Granted")
+
+
+// finally, there is the "for" loop. It is the most commonly used,
+// and it's really just a fancy way to do a while loop.
+
+
+// let a = 0;
+// let b = 1;
+// let c;
+// console.log(a);
+// console.log(b);
+
+// // 10th step of the fibonacci seq
+// for(let i = 0; i < 8; i += 1){
+//     c = a + b;
+//     a = b;
+//     b = c;
+//     console.log(c);
+// }
+
+
+// break and continue:  advanced loop management. "break" will escape from the loop
+// completely. "continue" will skip to the end of the current iteration and go back
+// to the top of the loop.
+
+// example: addition only calculators, to keep a running tally
+// let sum = 0;
+
+// while(true) {
+//     let value = +prompt("Enter a Number")
+    
+//     if (!value){
+//         break;
+//     } 
+
+//     sum += value;
+
+//     console.log("Current Total is ", sum);
+// }
+
+// console.log("Program Terminated");
+
+// for continue, here's a code that prints only even numbers up to 30:
+
+// for(let i = 0; i < 31; i += 1){
+//     if(i % 2 == 1){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
