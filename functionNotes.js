@@ -211,3 +211,18 @@
 //     console.log(i);
 // }
 
+
+
+// First have a question asking about what the total number the user would like to input (any number)
+// e.g. (250)
+// as the program runs, it will list every single number
+// e.g. (1 - 250)
+// whenever a multiple of 3 shows up console.log ("Fizz")
+// e.g. ( 3 "Fizz", 6 "Fizz", etc.)
+// whenever a multiple of 5 shows up console.log ("Buzz")
+// e.g. ( 5 "Buzz", 10 "Buzz", etc.)
+// whenever a multiple of both 3 AND 5 show up console.log ("FizzBuzz")
+// e.g. (15 "FizzBuzz", etc.)
+// repeat the process until that number that the user inputed has been included via console.log
+// e.g. since 250 is the final number, include 250 in the console.
+// then after that specific number has been reached, end the program
