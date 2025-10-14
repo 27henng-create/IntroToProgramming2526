@@ -226,3 +226,13 @@
 // repeat the process until that number that the user inputed has been included via console.log
 // e.g. since 250 is the final number, include 250 in the console.
 // then after that specific number has been reached, end the program
+
+let a = prompt("Please Enter a Number")
+
+for(let i = 1; i < a ; i += 1){
+    if(i % 3 == 0){
+        console.log("Fizz")
+    } else {
+        console.log(i)
+    }
+}
