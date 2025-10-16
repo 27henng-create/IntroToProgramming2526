@@ -227,16 +227,35 @@
 // e.g. since 250 is the final number, include 250 in the console.
 // then after that specific number has been reached, end the program
 
-let a = prompt("Please Enter a Number")
+// let a = prompt("Please Enter a Number")
 
-for(let i = 1; i <= a ; i += 1){
-    if(i % 3 == 0 && i % 5 == 0){
-        console.log("FizzBuzz")
-    } else  if( i % 5 == 0){
-        console.log("Buzz")
-    } else if( i % 3 == 0){
-        console.log("Fizz")
-    } else {
-        console.log(i)
-    }
-}
+// for(let i = 1; i <= a ; i += 1){
+//     if(i % 3 == 0 && i % 5 == 0){
+//         console.log("FizzBuzz")
+//     } else  if( i % 5 == 0){
+//         console.log("Buzz")
+//     } else if( i % 3 == 0){
+//         console.log("Fizz")
+//     } else {
+//         console.log(i)
+//     }
+// }
+
+
+
+// syntax error - missing parentheses
+// function helloWorld(){
+//     console.log"Hello World!";
+// }
+// helloWorld()
+
+//Type Error
+let a = "hello";
+let b = "world";
+console.log(a.concat(b));
+
+let c = 7;
+
+console.log(c.concat(a));
+
+console.log(a.concat(c));
