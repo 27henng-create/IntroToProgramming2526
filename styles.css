@@ -1,0 +1,28 @@
+/* These are my notes on CSS */
+
+/* CSS is again, not strickly a programming language. It's a "style guide".
+It tells a browser how display the elements of a website that you've created.
+It does this through "rules". Each rule is made up of a "selector", a "property", and a "value". */
+
+div {
+    color: darkcyan;
+}
+
+/* A class selector will select all elements with a given "class". This is an attribute
+that you give to an HTML element. */
+
+.general-greeting {
+    color: lightcoral;
+}
+
+.greeting {
+    font-family:cursive
+}
+
+/* You can also have ID selectors. The difference between class selectors and ID
+selectors is that an element can ONLY have 1 ID selector, and that ID selector CANNOT
+be repeated. */
+
+#response {
+    font-size: xx-large;
+}
