@@ -11,12 +11,22 @@ div {
 /* A class selector will select all elements with a given "class". This is an attribute
 that you give to an HTML element. */
 
-.general-greeting {
-    color: lightcoral;
+.greeting,
+.unread {
+    background-color: brown;
 }
 
-.greeting {
+.general-greeting#response{
+    font-size: xx-large;
+}
+
+.general-greeting {
+    color: darkmagenta;
+}
+
+.unread {
     font-family:cursive
+    
 }
 
 /* You can also have ID selectors. The difference between class selectors and ID
@@ -24,5 +34,10 @@ selectors is that an element can ONLY have 1 ID selector, and that ID selector C
 be repeated. */
 
 #response {
-    font-size: xx-large;
+    color: aqua;
+}
+
+
+.ancestor .contents{
+    color: firebrick;
 }
